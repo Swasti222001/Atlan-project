@@ -4,12 +4,12 @@ const input = () => {
   return (
     <div className={styles.inputmain}>
       <p>
-        <b>INPUT</b>    
+        <b>INPUT</b>
       </p>
-      <div >
+      <div className={styles.inputCont}>
         <input type="text"
-        className={styles.inputfield}
-         />
+          className={styles.inputfield}
+        />
       </div>
     </div>
   );
