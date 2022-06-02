@@ -1,0 +1,25 @@
+.inputmain{
+    background: rgb(225, 225, 224);
+    height:29rem;
+    margin: 3rem;
+    border-radius: 1rem 2rem 2rem 2rem;
+}
+.inputmain p{
+    background-color: rgb(175, 175, 175);
+    width: 150px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 1rem 0;
+    /* padding-left: 1rem; */
+}
+.inputfield{
+    /* position: relative; */
+    width: 90%;
+    border: none;
+    margin: 2rem;
+    /* margin-left: 2.5rem; */
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    height: 20rem;
+}

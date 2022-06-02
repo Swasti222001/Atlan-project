@@ -2,6 +2,7 @@ import styles from './list.module.css';
 // fontawesome imports
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const listlayout = () => {
   const tablelist = [
     {
@@ -34,9 +35,13 @@ const listlayout = () => {
           {tablelist.map((listlayout) =>(
         <div className={styles.listbg}>
             <p><FontAwesomeIcon icon={faTable} /><b>{listlayout.name}</b></p>
+
         </div>
+        
           ))}
+
       </div>
+
     </div>
   );
 };
