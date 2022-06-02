@@ -1,0 +1,42 @@
+.listmain {
+    font-family: var(--font-family-1);
+    /* height: 100vh; */
+}
+
+.listmain h2 {
+    text-align: center;
+    width: 200px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.listbg {
+    width: 200px;
+    min-height: 50px;
+    background: linear-gradient(to right,rgb(60, 141, 247), #add8e6);
+    margin: 0.8rem 1rem;
+    border-radius: 5rem;
+    border: 1.5px solid;
+
+}
+
+.listbg p {
+    color: rgb(4, 11, 55);
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+}
+
+.listbg p b {
+    margin-left: 1rem;
+}
+
+.listbg:hover {
+    background: linear-gradient(to right,rgb(95, 94, 94), #D0D0D0);
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: 0.3s ease;
+}
+
+.listbg p:hover {
+    color: black;
+}
