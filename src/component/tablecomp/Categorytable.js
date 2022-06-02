@@ -6,26 +6,30 @@ import Box from '@mui/material/Box';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import styles from './tables.module.css'
+import { catkey } from './KeyComp';
+import { categories } from '../../Tables/categories'
 
-const table = ({ tableRowData, tableColData }) => {
+
+const Categorytable = () => {
   return (
-    <div className={styles.tableContainer}>
+    <div className={styles.tableMainContainer}>
       {/* <Box className={styles.tableContainer}> */}
       <Table>
         <TableHead>
-          <TableRow>
+          <TableRow className={styles.tableTopCellCont}>
             {
-              tableColData && tableColData.map((cell) =>
-                <TableCell>{cell}</TableCell>)
+              catkey && catkey.map((cell) =>
+                <TableCell className={styles.tableTopCell} >{cell}</TableCell>
+              )
             }
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRowData && tableRowData.map((row, i) => (
+          {categories && categories.map((row, i) => (
             <TableRow
             >
               {
-                tableColData && tableColData.map((cell) =>
+                catkey && catkey.map((cell) =>
                   <TableCell>
                     {row[cell]}
                   </TableCell>
@@ -40,4 +44,4 @@ const table = ({ tableRowData, tableColData }) => {
   )
 }
 
-export default table
+export default Categorytable

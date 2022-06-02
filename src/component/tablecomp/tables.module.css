@@ -1,0 +1,17 @@
+.tableMainContainer {
+  overflow-x: auto;
+}
+
+.tablebox {
+  width: 100%;
+}
+
+.tableTopCellCont {
+  background-color: black;
+}
+
+.tableTopCell {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}

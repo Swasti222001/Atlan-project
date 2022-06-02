@@ -3,19 +3,27 @@ import Listlayout from "../component/listcomp/list";
 import Header from "../component/headercomp/header";
 import InputFields from "../component/Inputcomp/input";
 import styles from './mainlayout.module.css'
+import Categorytable from '../component/tablecomp/Categorytable';
+
 const mainlayout = () => {
   return (
     <div className={styles.mainlayoutdiv}>
       <div>
-      <Header />
+        <Header />
       </div>
       <div className={styles.mainlayoutdiv2}>
-      <div className={styles.listlayoutdiv}>
-      <Listlayout />
+        <div className={styles.listlayoutdiv}>
+          <Listlayout />
+        </div>
+        <div className={styles.inputlayoutdiv} >
+          <InputFields />
+        </div>
       </div>
-      <div className={styles.inputlayoutdiv}>
-      <InputFields />
-      </div>
+      <div className={styles.inputmain}>
+        <p>
+          <b>OUTPUT</b>
+        </p>
+        <Categorytable></Categorytable>
       </div>
     </div>
   );
