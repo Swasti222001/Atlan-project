@@ -6,12 +6,33 @@
   width: 100%;
 }
 
-.tableTopCellCont {
+/* .tableTopCellCont {
   background-color: black;
-}
+} */
 
 .tableTopCell {
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
+  /* color: white !important; */
+  text-align: center !important;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  /* border-top: 0 !important; */
+  /* border-right: 2px solid white !important;
+  border-left: 2px solid white !important;
+  border-bottom: 2px solid white !important; */
+  border-right: 2px solid black !important;
+  border-bottom: 2px solid black !important;
+  border-top: 2px solid black !important;
+}
+
+.tableBodyCell {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  border-right: 2px solid black !important;
+  border-bottom: 2px solid black !important;
+  border-top: 2px solid black !important;
+}
+
+.tableBodyCell:last-of-type {
+  border-right: 0 !important;
 }

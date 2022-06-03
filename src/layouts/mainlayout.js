@@ -1,42 +1,52 @@
-import React from "react";
-import Listlayout from "../component/listcomp/list";
-import Header from "../component/headercomp/header";
-import InputFields from "../component/Inputcomp/input";
+import { useState } from 'react';
+import Listlayout from "../component/listcomp/List";
+import Header from "../component/headercomp/Header";
 import styles from './mainlayout.module.css'
-import ButtonCustom from "../component/buttoncomp/button";
+import ButtonCustom from "../component/buttoncomp/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import Categorytable from '../component/tablecomp/Categorytable';
+import Conditional from '../component/tablecomp/Conditional'
+import InputConditional from '../component/Inputcomp/InputConditional';
 
-const mainlayout = () => {
+const Mainlayout = () => {
+  const [table, settable] = useState()
+  const [input, setinput] = useState()
   return (
-    <div className={styles.mainlayoutdiv}>
+    <>
       <div>
         <Header />
       </div>
-      <div className={styles.mainlayoutdiv2}>
-        <div className={styles.listlayoutdiv}>
-          <Listlayout />
+      <div className={styles.mainlayoutdiv}>
+
+        <div className={styles.mainlayoutdiv2}>
+          <div className={styles.listlayoutdiv}>
+            <Listlayout
+              settable={settable}
+              setinput={setinput} />
+          </div>
+          <div className={styles.inputlayoutdiv} >
+            <InputConditional input={input} />
+            <ButtonCustom
+              settable={settable}
+              secondary
+              customStyle={{ marginTop: '1rem' }}
+              btnText={'Run Query'}
+              // onClick={handleClick}
+              rightIcon={<FontAwesomeIcon icon={faCaretRight} />}
+            />
+          </div>
         </div>
-        <div className={styles.inputlayoutdiv} >
-          <InputFields />
+        <div className={styles.outputmain}>
+          <p>
+            <b>OUTPUT</b>
+          </p>
+          {/* <Categorytable></Categorytable> */}
+          <Conditional table={table} />
         </div>
+
       </div>
-      <div className={styles.inputmain}>
-        <p>
-          <b>OUTPUT</b>
-        </p>
-        <Categorytable></Categorytable>
-      </div>
-      <ButtonCustom
-          secondary
-          customStyle={{ marginTop: '1rem' }}
-          btnText={'Run Query'}
-          // onClick={handleClick}
-          rightIcon={<FontAwesomeIcon icon={faCaretRight} />}
-        />
-    </div>
+    </>
   );
 };
 
-export default mainlayout;
+export default Mainlayout;

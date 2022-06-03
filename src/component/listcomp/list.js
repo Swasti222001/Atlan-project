@@ -1,34 +1,30 @@
 import styles from './list.module.css';
-import Categorytable from '../tablecomp/Categorytable';
-import Customertable from '../tablecomp/Customertable';
-
-
 // fontawesome imports
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const listlayout = () => {
+const Listlayout = ({ settable, setinput }) => {
   const tablelist = [
     {
-      name: "Categories",
+      name: "categories",
     },
     {
-      name: "Customers",
+      name: "customers",
     },
     {
-      name: "Products",
+      name: "products",
     },
     {
-      name: "Regions",
+      name: "regions",
     },
     {
-      name: "Shippers",
+      name: "shippers",
     },
     {
-      name: "Suppliers",
+      name: "suppliers",
     },
     {
-      name: "Territories",
+      name: "territories",
     },
   ];
 
@@ -37,7 +33,10 @@ const listlayout = () => {
       <h2>Tables</h2>
       <div className={styles.listbgmain}>
         {tablelist.map((listlayout) => (
-          <div className={styles.listbg}>
+          <div className={styles.listbg} onClick={() => {
+            settable(listlayout.name)
+            setinput(listlayout.name)
+          }} >
             <p><FontAwesomeIcon icon={faTable} /><b>{listlayout.name}</b></p>
 
           </div>
@@ -50,4 +49,4 @@ const listlayout = () => {
   );
 };
 
-export default listlayout;
+export default Listlayout;

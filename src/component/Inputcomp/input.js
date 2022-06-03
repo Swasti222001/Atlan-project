@@ -1,18 +1,21 @@
-import React from "react";
+import { useState, useEffect } from 'react'
 import styles from "./input.module.css";
-const input = () => {
+const Input = ({ inputFieldData }) => {
+
   return (
     <div className={styles.inputmain}>
       <p>
         <b>INPUT</b>
       </p>
       <div className={styles.inputCont}>
-        <input type="text"
+        <textarea
+          value={inputFieldData}
           className={styles.inputfield}
         />
+
       </div>
     </div>
   );
 };
 
-export default input;
+export default Input;

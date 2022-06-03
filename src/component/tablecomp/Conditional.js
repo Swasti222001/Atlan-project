@@ -1,5 +1,6 @@
-import React from 'react'
-import TabJS from './table'
+import { useState, useEffect } from 'react'
+// import InputFields from "../Inputcomp/Input";
+import TabJS from './TableComp'
 import { categories } from '../../Tables/categories'
 import { customers } from '../../Tables/customers'
 import { emp_terr } from '../../Tables/employee_territories'
@@ -35,14 +36,43 @@ import { terrkey } from './KeyComp'
 // const supp = JSON.parse(suppliers)
 // const terr = JSON.parse(territories)
 
-const Conditional = ({ tab }) => {
+const Conditional = ({ table, input }) => {
+  const [tableData, setTableData] = useState({ colData: [], rowData: [] })
+  // const [inputData, setInputData] = useState({ inpData: [] })
+  useEffect(() => {
+    setTableData({
+      colData: table === "categories" ? catkey
+        : table === "customers" ? cuskey
+          : table === "products" ? prodkey
+            : table === "shippers" ? shipkey
+              : table === "suppliers" ? suppkey
+                : table === "territories" ? terrkey
+                  : table === "regions" ? regkey
+                    : [],
+      rowData: table === "categories" ? categories
+        : table === "customers" ? customers
+          : table === "products" ? products
+            : table === "shippers" ? shippers
+              : table === "suppliers" ? suppliers
+                : table === "regions" ? regions
+                  : table === "territories" ? territories
+                    : []
+    })
+  }, [table])
+  // useEffect(() => {
+  //   setInputData({
+  //     inpData: input === "categories" ? "Select * from categories"
+  //       : {}
+  //   })
+  // }, [input])
   return (
     <div>
-      <TabJS>
-        {
-          tab === { categories, catkey }
-        }
-      </TabJS>
+      <TabJS
+        tableColData={tableData.colData}
+        tableRowData={tableData.rowData}
+      />
+      {/* <InputFields inputFieldData={inputData.inpData} /> */}
+
     </div>
   )
 }

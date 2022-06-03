@@ -3,38 +3,49 @@
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.mainlayoutdiv {
+  margin: 0 4rem;
 }
 .listlayoutdiv {
   width: 20%;
 }
 .inputlayoutdiv {
-  width: 70%;
-  min-height: 500px;
+  width: 65%;
+  height: 400px;
+  text-align: left;
+  margin-top: 2rem;
 }
 
-.inputmain {
+.outputmain {
   /* background: rgb(225, 225, 224); */
   background-color: white;
-  height: 100%;
+  height: 80%;
   /* margin: 3rem; */
-  border-radius: 1rem 2rem 2rem 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.inputmain p {
+.outputmain p {
   background-color: rgb(175, 175, 175);
   /* width: 150px; */
   width: 100%;
   height: 10%;
   text-align: center;
   font-size: 2rem;
-  border-radius: 1rem 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   /* padding-left: 1rem; */
 }
 @media only screen and (max-width: 768px) {
   .mainlayoutdiv2 {
     flex-wrap: wrap !important;
+  }
+  .mainlayoutdiv {
+    margin: 0 2rem !important;
   }
   .listlayoutdiv {
     width: 100% !important;
@@ -42,6 +53,10 @@
   }
   .inputlayoutdiv {
     width: 100% !important;
+    height: 100%;
+    /* min-height: 300px; */
+    min-height: 0;
+    margin-top: 0;
   }
 }
 
@@ -50,7 +65,11 @@
     width: 30%;
   }
   .inputlayoutdiv {
-    width: 60%;
-    /* min-height: 500px; */
+    width: 50%;
+    /* height: 300px; */
+    /* min-height: 0; */
+  }
+  .mainlayoutdiv {
+    margin: 0;
   }
 }

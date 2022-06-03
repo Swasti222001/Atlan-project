@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -6,11 +6,8 @@ import Box from '@mui/material/Box';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import styles from './tables.module.css'
-import { catkey } from './KeyComp';
-import { categories } from '../../Tables/categories'
 
-
-const Categorytable = () => {
+const TableComp = ({ tableRowData, tableColData }) => {
   return (
     <div className={styles.tableMainContainer}>
       {/* <Box className={styles.tableContainer}> */}
@@ -18,19 +15,18 @@ const Categorytable = () => {
         <TableHead>
           <TableRow className={styles.tableTopCellCont}>
             {
-              catkey && catkey.map((cell) =>
-                <TableCell className={styles.tableTopCell} >{cell}</TableCell>
-              )
+              tableColData && tableColData.map((cell) =>
+                <TableCell className={styles.tableTopCell}>{cell}</TableCell>)
             }
           </TableRow>
         </TableHead>
         <TableBody>
-          {categories && categories.map((row, i) => (
+          {tableRowData && tableRowData.map((row, i) => (
             <TableRow
             >
               {
-                catkey && catkey.map((cell) =>
-                  <TableCell>
+                tableColData && tableColData.map((cell) =>
+                  <TableCell className={styles.tableBodyCell}>
                     {row[cell]}
                   </TableCell>
                 )
@@ -44,4 +40,4 @@ const Categorytable = () => {
   )
 }
 
-export default Categorytable
+export default TableComp

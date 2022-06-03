@@ -14,8 +14,7 @@ const ButtonCustom = ({
     <button
       className={
         styles.buttonClass +
-        ` ${
-          primary ? styles.primaryBtn : secondary ? styles.secondaryBtn : " "
+        ` ${primary ? styles.primaryBtn : secondary ? styles.secondaryBtn : " "
         }`
       }
       style={customStyle}
