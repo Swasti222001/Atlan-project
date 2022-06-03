@@ -1,5 +1,9 @@
 .tableMainContainer {
   overflow-x: auto;
+  border:1px solid black;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: white;
+
 }
 
 .tablebox {
@@ -19,6 +23,8 @@
   /* border-right: 2px solid white !important;
   border-left: 2px solid white !important;
   border-bottom: 2px solid white !important; */
+  /* border:2px solid black; */
+  /* border-left: 2px solid black; */
   border-right: 2px solid black !important;
   border-bottom: 2px solid black !important;
   border-top: 2px solid black !important;

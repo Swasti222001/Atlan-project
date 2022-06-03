@@ -29,7 +29,7 @@ const Mainlayout = () => {
             <ButtonCustom
               settable={settable}
               secondary
-              customStyle={{ marginTop: '1rem' }}
+              customStyle={{ marginTop: '1.2rem' }}
               btnText={'Run Query'}
               // onClick={handleClick}
               rightIcon={<FontAwesomeIcon icon={faCaretRight} />}

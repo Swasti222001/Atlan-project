@@ -1,5 +1,5 @@
 .inputmain {
-  background: rgb(225, 225, 224);
+  background: rgb(209, 225, 236);
   height: 100%;
   /* margin: 3rem; */
   border-radius: 2rem;
@@ -7,8 +7,8 @@
   flex-direction: column;
 }
 .inputmain p {
-  background-color: rgb(175, 175, 175);
-  /* width: 150px; */
+  background-color: rgb(61, 104, 157);
+  color: white;
   width: 100%;
   height: 10%;
   text-align: center;
@@ -18,11 +18,8 @@
   /* padding-left: 1rem; */
 }
 .inputfield {
-  /* position: relative; */
-  /* width: 90%; */
+  outline:none;
   border: none;
-  /* margin: 2rem; */
-  /* margin-left: 2.5rem; */
   padding: 2rem;
   font-size: 1.5rem;
   border-radius: 2rem;

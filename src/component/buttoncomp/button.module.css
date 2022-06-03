@@ -1,12 +1,10 @@
 .buttonClass {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5rem;
   color: black;
   border-radius: 60px;
-  padding: 1rem;
+  padding: 0.5em;
   transition: all 0.2s ease;
-  /* display: flex; */
-  /* align-items: center; */
   text-align: center;
   border: 2px solid transparent;
   cursor: pointer;
@@ -20,17 +18,17 @@
   box-shadow: var(--box-shadow-2);
 }
 .primaryBtn:hover {
-  background-color: black;
+  background-color: rgb(10, 40, 103);
   color: #ffffff;
 }
 
 .secondaryBtn {
   background-color: #ffffff;
-  border-color: rgb(113, 157, 233);
+  border-color: rgb(2, 22, 56);
   color: black;
 }
 .secondaryBtn:hover {
-  background-color: black;
+  background-color: rgb(10, 40, 103);
   color: #ffffff;
   box-shadow: var(--box-shadow-2);
 }
