@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import styles from "./input.module.css";
 const Input = ({ inputFieldData }) => {
 

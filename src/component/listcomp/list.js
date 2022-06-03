@@ -3,7 +3,7 @@ import styles from './list.module.css';
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Listlayout = ({ settable, setinput }) => {
+const List = ({ settable, setinput }) => {
   const tablelist = [
     {
       name: "categories",
@@ -49,4 +49,4 @@ const Listlayout = ({ settable, setinput }) => {
   );
 };
 
-export default Listlayout;
+export default List;
