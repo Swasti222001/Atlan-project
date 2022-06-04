@@ -41,3 +41,12 @@
     font-size: 1.5rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .inputmain p {
+    margin-bottom: 1rem;
+  }
+  .inputfield {
+    margin-bottom: 1rem;
+  }
+}
