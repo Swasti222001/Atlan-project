@@ -64,3 +64,93 @@ a:hover {
 .App {
   overflow-x: hidden;
 }
+
+.lightMode {
+  background-color: white;
+}
+
+.darkMode {
+  /* background-color: black; */
+  background-color: rgb(1, 8, 19);
+}
+
+.darkMode .outputmain p {
+  /* background-color: rgb(4, 33, 70); */
+  background-color: rgb(5, 23, 46);
+}
+
+.darkMode .header {
+  /* background-color: rgb(4, 33, 70); */
+  background-color: rgb(5, 23, 46);
+}
+
+.darkMode .inputmain p {
+  background-color: rgb(5, 23, 46);
+}
+
+.darkMode .listbg {
+  background-color: rgb(31, 95, 173);
+}
+
+.darkMode .listbg p {
+  color: white;
+}
+
+.darkMode .secondaryBtn {
+  background-color: rgb(31, 95, 173);
+  color: white;
+}
+
+.darkMode .listmain h2 {
+  color: white;
+}
+
+.darkMode .inputfield {
+  background-color: rgb(4, 33, 70);
+  color: white;
+}
+
+.darkMode .tableMainContainer {
+  background-color: rgb(4, 33, 70);
+  border: 1px solid white;
+}
+
+.darkMode .tableTopCell {
+  border-right: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+  border-top: 2px solid white !important;
+  color: white;
+}
+
+.darkMode .tableBodyCell {
+  border-right: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+  border-top: 2px solid white !important;
+  color: white;
+}
+
+.darkMode .listbg:hover {
+  background-color: #add8e6;
+}
+
+.darkMode .secondaryBtn:hover {
+  background-color: #add8e6;
+  color: black;
+}
+
+.darkMode .darkmode {
+  color: white;
+}
+
+.darkMode .outputmain {
+  /* box-shadow: rgba(255, 255, 255, 0.7) 0px 5px 15px; */
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      24px 38px 3px hsla(0, 0%, 0%, 0.14),
+    0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
+    0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
+}
+
+.darkMode .App {
+  background-color: rgb(1, 8, 19);
+}

@@ -1,16 +1,16 @@
 // import { useState, useEffect } from 'react'
-import styles from "./input.module.css";
+import "./input.css";
 const Input = ({ inputFieldData }) => {
 
   return (
-    <div className={styles.inputmain}>
+    <div className="inputmain">
       <p>
         <b>INPUT</b>
       </p>
-      <div className={styles.inputCont}>
+      <div className="inputCont">
         <textarea
           value={inputFieldData}
-          className={styles.inputfield}
+          className="inputfield"
         />
 
       </div>

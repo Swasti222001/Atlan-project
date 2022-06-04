@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Listlayout from "../component/listcomp/List";
 import Header from "../component/headercomp/Header";
-import styles from './mainlayout.module.css'
+import './mainlayout.css'
 import ButtonCustom from "../component/buttoncomp/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
@@ -11,23 +11,28 @@ import InputConditional from '../component/Inputcomp/InputConditional';
 const Mainlayout = () => {
   const [table, settable] = useState()
   const [input, setinput] = useState()
-  return (
-    <>
-      <div>
-        <Header />
-      </div>
-      <div className={styles.mainlayoutdiv}>
+  const [isDarkModeActive, setIsDarkModeActive] = useState()
 
-        <div className={styles.mainlayoutdiv2}>
-          <div className={styles.listlayoutdiv}>
+  return (
+    <div className={isDarkModeActive ? "darkMode" : "lightMode"}>
+      <div>
+        <Header
+          isDarkModeActive={isDarkModeActive}
+          setIsDarkModeActive={setIsDarkModeActive}
+        />
+      </div>
+      <div className="mainlayoutdiv">
+
+        <div className="mainlayoutdiv2">
+          <div className="listlayoutdiv">
             <Listlayout
               settable={settable}
               setinput={setinput} />
           </div>
-          <div className={styles.inputlayoutdiv} >
+          <div className="inputlayoutdiv">
             <InputConditional input={input} />
             <ButtonCustom
-              settable={settable}
+              // settable={settable}
               secondary
               customStyle={{ marginTop: '1.2rem' }}
               btnText={'Run Query'}
@@ -36,7 +41,7 @@ const Mainlayout = () => {
             />
           </div>
         </div>
-        <div className={styles.outputmain}>
+        <div className="outputmain">
           <p>
             <b>OUTPUT</b>
           </p>
@@ -45,7 +50,7 @@ const Mainlayout = () => {
         </div>
 
       </div>
-    </>
+    </div>
   );
 };
 

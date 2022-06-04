@@ -1,4 +1,4 @@
-import styles from './list.module.css';
+import './list.css';
 // fontawesome imports
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,11 +29,11 @@ const List = ({ settable, setinput }) => {
   ];
 
   return (
-    <div className={styles.listmain}>
+    <div className="listmain">
       <h2>Tables</h2>
-      <div className={styles.listbgmain}>
+      <div className="listbgmain">
         {tablelist.map((listlayout) => (
-          <div className={styles.listbg} onClick={() => {
+          <div className="listbg" onClick={() => {
             settable(listlayout.name)
             setinput(listlayout.name)
           }} >

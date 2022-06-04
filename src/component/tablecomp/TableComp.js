@@ -5,18 +5,18 @@ import TableCell from '@mui/material/TableCell';
 // import Box from '@mui/material/Box';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import styles from './tables.module.css'
+import './tables.css'
 
 const TableComp = ({ tableRowData, tableColData }) => {
   return (
-    <div className={styles.tableMainContainer}>
+    <div className="tableMainContainer">
       {/* <Box className={styles.tableContainer}> */}
       <Table>
         <TableHead>
-          <TableRow className={styles.tableTopCellCont}>
+          <TableRow className="tableTopCellCont">
             {
               tableColData && tableColData.map((cell) =>
-                <TableCell className={styles.tableTopCell}>{cell}</TableCell>)
+                <TableCell className="tableTopCell">{cell}</TableCell>)
             }
           </TableRow>
         </TableHead>
@@ -26,7 +26,7 @@ const TableComp = ({ tableRowData, tableColData }) => {
             >
               {
                 tableColData && tableColData.map((cell) =>
-                  <TableCell className={styles.tableBodyCell}>
+                  <TableCell className="tableBodyCell">
                     {row[cell]}
                   </TableCell>
                 )
