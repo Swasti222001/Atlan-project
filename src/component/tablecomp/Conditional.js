@@ -36,7 +36,7 @@ import { terrkey } from './KeyComp'
 // const supp = JSON.parse(suppliers)
 // const terr = JSON.parse(territories)
 
-const Conditional = ({ table, input }) => {
+const Conditional = ({ table }) => {
   const [tableData, setTableData] = useState({ colData: [], rowData: [] })
   // const [inputData, setInputData] = useState({ inpData: [] })
   useEffect(() => {

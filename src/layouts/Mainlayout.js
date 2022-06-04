@@ -10,7 +10,7 @@ import InputConditional from '../component/Inputcomp/InputConditional';
 
 const Mainlayout = () => {
   const [table, settable] = useState()
-  const [input, setinput] = useState()
+  const [input, setinput] = useState("")
   const [isDarkModeActive, setIsDarkModeActive] = useState()
 
   return (
@@ -32,7 +32,9 @@ const Mainlayout = () => {
           <div className="inputlayoutdiv">
             <InputConditional input={input} />
             <ButtonCustom
+              settable={settable}
               // settable={settable}
+              inputFieldData
               secondary
               customStyle={{ marginTop: '1.2rem' }}
               btnText={'Run Query'}

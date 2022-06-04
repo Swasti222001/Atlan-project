@@ -8,18 +8,25 @@ const ButtonCustom = ({
   leftIcon,
   rightIcon,
   customStyle,
-  onClick,
+  inputFieldData,
+  settable
 }) => {
+  const tname = "categories"
+
   return (
     <button
       className={
+        // inputFieldData === "" ? "disabled" :
         "buttonClass" +
-        ` ${primary ? "primaryBtn" : secondary ? "secondaryBtn" : " "
-        }`
+        ` ${primary ? "primaryBtn" : secondary ? "secondaryBtn" : ""}`
       }
       style={customStyle}
-      onClick={onClick}
+      // onClick={onClick}
+      onClick={() => {
+        settable(tname)
+      }}
     >
+
       {leftIcon}
       <span className="text">{btnText}</span>
       {rightIcon}

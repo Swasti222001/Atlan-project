@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react'
 import "./input.css";
-const Input = ({ inputFieldData }) => {
+const Input = ({ inputFieldData, setInputFieldData }) => {
 
   return (
     <div className="inputmain">
@@ -10,6 +10,7 @@ const Input = ({ inputFieldData }) => {
       <div className="inputCont">
         <textarea
           value={inputFieldData}
+          onChange={(e) => setInputFieldData(e.target.value)}
           className="inputfield"
         />
 
