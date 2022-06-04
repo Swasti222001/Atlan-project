@@ -1,4 +1,3 @@
-// import { useState, useEffect } from 'react'
 import "./input.css";
 const Input = ({ inputFieldData, setInputFieldData }) => {
 

@@ -1,24 +1,17 @@
 .listmain {
   font-family: var(--font-family-1);
-  /* width: 30%; */
-  /* height: 100vh; */
 }
 
 .listmain h2 {
   text-align: center;
   width: 100%;
-  /* margin-top: 0.5rem; */
-  /* margin-left: 1rem; */
 }
 
 .listbg {
   width: 100%;
-  /* height: 50px; */
-  /* background: linear-gradient(to right, rgb(60, 141, 247), #add8e6); */
   background-color: #add8e6;
   margin-top: 0.8rem;
   border-radius: 5rem;
-  /* border: 1.5px solid; */
 }
 
 .listbg p {
@@ -32,7 +25,6 @@
 }
 
 .listbg:hover {
-  /* background: linear-gradient(to right, rgb(95, 94, 94), #d0d0d0); */
   background-color: rgb(118, 169, 231);
 
   cursor: pointer;

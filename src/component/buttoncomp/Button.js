@@ -8,7 +8,6 @@ const ButtonCustom = ({
   leftIcon,
   rightIcon,
   customStyle,
-  inputFieldData,
   settable
 }) => {
   const tname = "categories"
@@ -16,12 +15,10 @@ const ButtonCustom = ({
   return (
     <button
       className={
-        // inputFieldData === "" ? "disabled" :
         "buttonClass" +
         ` ${primary ? "primaryBtn" : secondary ? "secondaryBtn" : ""}`
       }
       style={customStyle}
-      // onClick={onClick}
       onClick={() => {
         settable(tname)
       }}

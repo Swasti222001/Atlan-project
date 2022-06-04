@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* overflow-y: hidden; */
 }
 
 h1,
@@ -70,17 +69,14 @@ a:hover {
 }
 
 .darkMode {
-  /* background-color: black; */
   background-color: rgb(1, 8, 19);
 }
 
 .darkMode .outputmain p {
-  /* background-color: rgb(4, 33, 70); */
   background-color: rgb(5, 23, 46);
 }
 
 .darkMode .header {
-  /* background-color: rgb(4, 33, 70); */
   background-color: rgb(5, 23, 46);
 }
 
@@ -140,15 +136,6 @@ a:hover {
 
 .darkMode .darkmode {
   color: white;
-}
-
-.darkMode .outputmain {
-  /* box-shadow: rgba(255, 255, 255, 0.7) 0px 5px 15px; */
-  box-shadow:
-		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
-      24px 38px 3px hsla(0, 0%, 0%, 0.14),
-    0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
-    0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
 }
 
 .darkMode .App {

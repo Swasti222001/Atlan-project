@@ -1,5 +1,4 @@
 import './list.css';
-// fontawesome imports
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

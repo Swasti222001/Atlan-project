@@ -14,7 +14,6 @@
 
 .primaryBtn {
   background-color: white;
-  /* color: #ffffff; */
   box-shadow: var(--box-shadow-2);
 }
 .primaryBtn:hover {
@@ -23,15 +22,12 @@
 }
 
 .secondaryBtn {
-  /* background-color: #ffffff; */
   background-color: #add8e6;
 
-  /* border-color: rgb(2, 22, 56); */
   border: 0;
   color: black;
 }
 .secondaryBtn:hover {
-  /* background-color: rgb(10, 40, 103); */
   background-color: rgb(118, 169, 231);
   border: 0;
   color: #ffffff;

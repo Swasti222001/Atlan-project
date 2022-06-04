@@ -34,7 +34,6 @@
 }
 
 .outputmain p {
-  /* background-color: rgb(61, 104, 157); */
   background-color: rgb(31, 95, 173);
 
   color: white;
@@ -45,7 +44,7 @@
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.csvdown{
+.csvdown {
   float: right;
   margin: 0.5rem;
   font-size: 1.5rem;
@@ -68,7 +67,6 @@
   .inputlayoutdiv {
     width: 100% !important;
     height: 100%;
-    /* min-height: 300px; */
     min-height: 0;
     margin-top: 0;
   }
